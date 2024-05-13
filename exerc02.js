@@ -1,5 +1,5 @@
-function numeroMaior(){
-    const numerosInteiros=[8,9,6,5,7,2,3,1,10]
+function numeroMaior(numerosInteiros){
+    
     let maiorNumero=numerosInteiros[0];
     let menorNumero=numerosInteiros[0];
     numerosInteiros.forEach(number=> {
@@ -13,7 +13,12 @@ function numeroMaior(){
         }
         
     });
-    console.log( `O numero ${maiorNumero} é o maior valor do array`)
-    console.log(`O numero ${menorNumero} é o menor valor do array`)
-    }
-    numeroMaior();
+    return {
+        maior: maiorNumero,
+        menor: menorNumero
+    };
+    
+}
+//console.log(numeroMaior());
+
+    module.exports={numeroMaior}
